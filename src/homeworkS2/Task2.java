@@ -31,11 +31,11 @@ public class Task2 {
         driver.findElement(By.name("reg_email__")).sendKeys("923-666-9999");
         driver.findElement(By.id("password_step_input")).sendKeys("1234567");
 
-        driver.findElement(By.id("birthday_month")).sendKeys("Jun");
-        driver.findElement(By.id("birthday_day")).sendKeys("6");
-        driver.findElement(By.id("birthday_year")).sendKeys("1978");
+       //driver.findElement(By.id("birthday_month")).sendKeys("Jun");
+     //  driver.findElement(By.id("birthday_day")).sendKeys("6");
+      // driver.findElement(By.id("birthday_year")).sendKeys("1978");
 
-        driver.findElement(By.name("sex")).sendKeys("Male");
+        driver.findElement(By.cssSelector("input[value='2']")).click();//(By.name("sex")).click();
         driver.findElement(By.name("websubmit")).click();
         Thread.sleep(3000);
         driver.close();
