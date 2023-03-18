@@ -1,5 +1,6 @@
 package classS1;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,6 +17,7 @@ public class LaunchBrowser {
 
         // get the title
         String title=driver.getTitle();
+
         System.out.println(title);
 
 //make it sleep for 3 seconds
